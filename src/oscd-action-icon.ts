@@ -7,11 +7,11 @@ import '@material/mwc-icon';
  * @slot action - May contain up to eight icon buttons.
  * @slot icon - If filled overrides the icon property.
  * @slot - The default slot will be rendered into the pane body in a single column.
- * @cssprop [--oscd-action-icon-theme-primary=--oscd-theme-primary]
- * @cssprop [--oscd-action-icon-theme-on-primary=--oscd-theme-on-primary]
- * @cssprop [--oscd-action-icon-theme-secondary=--oscd-theme-secondary]
- * @cssprop [--oscd-action-icon-theme-on-surface=--oscd-theme-on-surface]
- * @cssprop [--oscd-action-icon-theme-font=--oscd-theme-font]
+ * @cssprop [--oscd-action-icon-theme-primary=--oscd-theme-primary] - Border and hover color.
+ * @cssprop [--oscd-action-icon-theme-on-primary=--oscd-theme-on-primary] - Font color inside hover field.
+ * @cssprop [--oscd-action-icon-theme-secondary=--oscd-theme-secondary] - Secondary border and hover color.
+ * @cssprop [--oscd-action-icon-theme-on-surface=--oscd-theme-on-surface] - Icon and label color.
+ * @cssprop [--oscd-action-icon-theme-font=--oscd-theme-font] - Font for label and hover text.
  *
  * @summary A responsive container rendering actions in a header.
  * @tag oscd-action-icon

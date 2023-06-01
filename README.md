@@ -97,13 +97,13 @@ To run a local development server that serves the basic demo located in `demo/in
 
 #### CSS Properties
 
-| Name                                  | Default                   | Description |
-| ------------------------------------- | ------------------------- | ----------- |
-| `--oscd-action-icon-theme-primary`    | `--oscd-theme-primary`    |             |
-| `--oscd-action-icon-theme-on-primary` | `--oscd-theme-on-primary` |             |
-| `--oscd-action-icon-theme-secondary`  | `--oscd-theme-secondary`  |             |
-| `--oscd-action-icon-theme-on-surface` | `--oscd-theme-on-surface` |             |
-| `--oscd-action-icon-theme-font`       | `--oscd-theme-font`       |             |
+| Name                                  | Default                   | Description                       |
+| ------------------------------------- | ------------------------- | --------------------------------- |
+| `--oscd-action-icon-theme-primary`    | `--oscd-theme-primary`    | Border and hover color.           |
+| `--oscd-action-icon-theme-on-primary` | `--oscd-theme-on-primary` | Font color inside hover field.    |
+| `--oscd-action-icon-theme-secondary`  | `--oscd-theme-secondary`  | Secondary border and hover color. |
+| `--oscd-action-icon-theme-on-surface` | `--oscd-theme-on-surface` | Icon and label color.             |
+| `--oscd-action-icon-theme-font`       | `--oscd-theme-font`       | Font for label and hover text.    |
 
 #### Slots
 
