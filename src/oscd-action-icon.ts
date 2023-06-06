@@ -1,5 +1,5 @@
 import { css, html, LitElement, nothing, TemplateResult } from 'lit';
-import { property, customElement } from 'lit/decorators.js';
+import { property } from 'lit/decorators.js';
 
 import '@material/mwc-icon';
 
@@ -46,9 +46,9 @@ export class OscdActionIcon extends LitElement {
   }
 
   render(): TemplateResult {
-    return html`<header>${this.label ?? nothing}</header>
+    return html`${this.label ? html`<header>${this.label}</header>` : nothing}
       <section>${this.renderIcon()}<slot name="action"></slot></section>
-      <footer>${this.label ?? nothing}</footer>`;
+      ${this.label ? html`<footer>${this.label}</footer>` : nothing}`;
   }
 
   static styles = css`

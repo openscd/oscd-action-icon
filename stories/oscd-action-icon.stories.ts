@@ -26,6 +26,7 @@ interface ArgTypes {
   secondary: boolean;
   highlighted: boolean;
   hideActions: boolean;
+  actions: TemplateResult;
 }
 
 const Template: Story<ArgTypes> = ({
@@ -34,7 +35,8 @@ const Template: Story<ArgTypes> = ({
   secondary = false,
   highlighted = false,
   hideActions = false,
-}: ArgTypes) => html`
+  actions,
+}: ArgTypes) => html`<div style="margin-top:128px;">
   <oscd-action-icon
     .label=${label}
     .icon=${icon}
@@ -42,33 +44,9 @@ const Template: Story<ArgTypes> = ({
     ?highlighted=${highlighted}
     ?hideActions=${hideActions}
   >
+    ${actions}
   </oscd-action-icon>
-`;
-
-const Template2: Story<ArgTypes> = ({
-  label = 'Label',
-  icon = 'edit',
-  secondary = false,
-  highlighted = false,
-  hideActions = false,
-}: ArgTypes) => html`
-  <oscd-action-icon
-    .label=${label}
-    .icon=${icon}
-    ?secondary=${secondary}
-    ?highlighted=${highlighted}
-    ?hideActions=${hideActions}
-  >
-  </oscd-action-icon>
-  <oscd-action-icon
-    .label=${label}
-    .icon=${icon}
-    ?secondary=${!secondary}
-    ?highlighted=${!highlighted}
-    ?hideActions=${!hideActions}
-  >
-  </oscd-action-icon>
-`;
+</div> `;
 
 export const JustALabel = Template.bind({});
 export const LabelWithIcon = Template.bind({});
@@ -94,4 +72,20 @@ HideActionAnimation.args = {
   hideActions: true,
 };
 
-export const TwoActionIcons = Template2.bind({});
+export const Actions = Template.bind({});
+Actions.args = {
+  icon: 'edit',
+  actions: html`<oscd-action-icon slot="action" icon="edit" label="Bar">
+    </oscd-action-icon>
+    <oscd-action-icon
+      slot="action"
+      mini
+      icon="delete"
+      label="Foo"
+    ></oscd-action-icon>
+    <oscd-action-icon
+      slot="action"
+      mini
+      icon="conveyor_belt"
+    ></oscd-action-icon>`,
+};

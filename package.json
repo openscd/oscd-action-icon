@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "author": "Alliander",
   "version": "0.0.0",
-  "main": "dist/src/OscdActionIcon.js",
+  "browser": "dist/src/OscdActionIcon.js",
   "module": "dist/src/OscdActionIcon.js",
   "exports": {
     ".": "./dist/src/OscdActionIcon.js"
@@ -27,11 +27,10 @@
     "deploy": "npm run storybook:build && gh-pages --dist storybook-static"
   },
   "dependencies": {
-    "@material/mwc-icon": "^0.22.1",
+    "@material/mwc-icon": "^0.27.0",
     "lit": "^2.7.4",
     "lit-element": "2.5.1",
-    "lit-html": "1.4.1",
-    "lit-translate": "^1.2.1"
+    "lit-html": "1.4.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
@@ -60,13 +59,6 @@
     "typescript": "^4.5.2"
   },
   "customElements": "custom-elements.json",
-  "eslintConfig": {
-    "extends": [
-      "@open-wc/eslint-config",
-      "eslint-config-prettier",
-      "ts-standard"
-    ]
-  },
   "prettier": {
     "singleQuote": true,
     "arrowParens": "avoid"
