@@ -18,5 +18,5 @@
     "declaration": true,
     "incremental": true
   },
-  "include": ["**/*.ts"]
+  "include": ["src/*.ts"]
 }
