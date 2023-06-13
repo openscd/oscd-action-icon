@@ -66,6 +66,18 @@ For most of the tools, the configuration is in the `package.json` to reduce the 
 
 If you customize the configuration a lot, you can consider moving them to individual files.
 
+### Icon font
+
+Material Icons are being used for the icons. This font needs to be added in the html first.
+You can add it like so:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+  rel="stylesheet"
+/>
+```
+
 ## Local Demo with `web-dev-server`
 
 ```bash
