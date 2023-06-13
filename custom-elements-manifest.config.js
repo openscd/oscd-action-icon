@@ -6,8 +6,8 @@ export default {
   litelement: true,
   plugins: [
     readmePlugin({
-      header: 'README.head.md',
-      footer: 'README.foot.md',
+      header: 'head.md',
+      footer: 'foot.md',
       private: 'hidden',
     }),
   ],

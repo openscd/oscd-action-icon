@@ -4,10 +4,13 @@
   "license": "Apache-2.0",
   "author": "Alliander",
   "version": "0.0.0",
-  "browser": "dist/src/OscdActionIcon.js",
-  "module": "dist/src/OscdActionIcon.js",
+  "browser": "./dist/OscdActionIcon.js",
+  "module": "./dist/OscdActionIcon.js",
+  "files": [
+    "dist/**/*"
+  ],
   "exports": {
-    ".": "./dist/src/OscdActionIcon.js"
+    ".": "./dist/OscdActionIcon.js"
   },
   "type": "module",
   "scripts": {
