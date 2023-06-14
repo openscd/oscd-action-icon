@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        --oscd-action-icon-theme-on-surface: #657b83;
+        --oscd-action-icon-theme-surface: #fdf6e3;
+        --oscd-action-icon-theme-primary: #2aa198;
+        --oscd-action-icon-theme-on-primary: #eee8d5;
+        --oscd-action-icon-theme-secondary: #6c71c4;
+        --oscd-action-icon-theme-font: 'Roboto', sans-serif;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <script type="module">
+      import { html, render, css } from 'lit';
+      import '../dist/OscdActionIcon.js';
+
+      const icon = 'edit';
+      render(
+        html`
+          <oscd-action-icon .label=${'Label and icon'} .icon=${icon}>
+          </oscd-action-icon>
+          <oscd-action-icon
+            .label=${'Label, icon and highlighted'}
+            .icon=${icon}
+            highlighted
+          >
+          </oscd-action-icon>
+          <oscd-action-icon
+            .label=${'Label, icon and secondary color when selected'}
+            .icon=${icon}
+            secondary
+          >
+          </oscd-action-icon>
+          <oscd-action-icon
+            .label=${'Same as above but highlighted'}
+            .icon=${icon}
+            secondary
+            highlighted
+          >
+          </oscd-action-icon>
+          <oscd-action-icon
+            .label=${'Same as above but without CSS adoption'}
+            .icon=${icon}
+            secondary
+            highlighted
+            hideActions
+          >
+          </oscd-action-icon>
+        `,
+        document.querySelector('#demo')
+      );
+    </script>
+  </body>
+</html>

@@ -1,21 +1,21 @@
-# \<oscd-component>
+# \<oscd-action-icon>
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 
 ```bash
-npm i oscd-component
+npm i @openscd/oscd-action-icon
 ```
 
 ## Usage
 
 ```html
 <script type="module">
-  import 'oscd-component';
+  import '@openscd/oscd-action-icon';
 </script>
 
-<oscd-component></oscd-component>
+<oscd-action-icon></oscd-action-icon>
 ```
 
 ## Linting and formatting
@@ -60,12 +60,23 @@ To build a production version of Storybook, run
 npm run storybook:build
 ```
 
-
 ## Tooling configs
 
 For most of the tools, the configuration is in the `package.json` to reduce the amount of files in your project.
 
 If you customize the configuration a lot, you can consider moving them to individual files.
+
+### Icon font
+
+Material Icons are being used for the icons. This font needs to be added in the html first.
+You can add it like so:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css?family=Material+Icons&display=block"
+  rel="stylesheet"
+/>
+```
 
 ## Local Demo with `web-dev-server`
 
