@@ -3,7 +3,7 @@
   "description": "Webcomponent oscd-action-icon following open-wc recommendations",
   "license": "Apache-2.0",
   "author": "Alliander",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "browser": "./dist/OscdActionIcon.js",
   "module": "./dist/OscdActionIcon.js",
   "files": [
